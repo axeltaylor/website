@@ -17,7 +17,7 @@ const HomePage: NextPage = () => {
       <p className="text-xl font-bold">👷 En construcción...</p>
       <p>
         Contacto vía twitter{' '}
-        <a href="https://twitter.com/axeltaylor_">@axeltaylor_</a>
+        <a href="https://twitter.com/taylordotcat">@taylordotcat</a>
       </p>
     </MainLayout>
   )
