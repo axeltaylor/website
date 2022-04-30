@@ -14,4 +14,4 @@ MIT - Copyright 2022 Axel Taylor
 
 ## Contact
 
-Twitter [@axeltaylor\_](https://twitter.com/axeltaylor_)
+Twitter [@taylordotcat](https://twitter.com/taylordotcat)
