@@ -1,4 +1,4 @@
-import Avatar from '../common/avatar/avatar'
+import Avatar from '../common/avatar/Avatar'
 
 const Header = () => {
   return (
