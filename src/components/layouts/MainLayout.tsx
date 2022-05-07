@@ -1,5 +1,6 @@
 import Footer from '../footer/Footer'
 import Header from '../header/Header'
+import Section from '../section/Section'
 
 type MainLayoutProps = {
   children: React.ReactNode | React.ReactNode[]
@@ -8,9 +9,14 @@ type MainLayoutProps = {
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <>
-      <Header />
+      <Section>
+        <Header />
+      </Section>
+
       {children}
-      <Footer />
+      <Section>
+        <Footer />
+      </Section>
     </>
   )
 }
