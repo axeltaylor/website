@@ -15,10 +15,18 @@ body {
   margin: 0;
 }
 
+body {
+  @apply bg-almost-black text-white;
+}
+
 a {
-  @apply font-bold hover:border-b-2 focus-visible:border-b-2 border-b-notblue outline-none;
+  @apply font-bold decoration-2 decoration-not-pink underline-offset-4 hover:underline focus-visible:underline outline-none text-not-pink;
 }
 
 * {
   box-sizing: border-box;
+}
+
+::selection {
+  @apply bg-not-green bg-opacity-30;
 }

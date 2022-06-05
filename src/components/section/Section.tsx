@@ -6,7 +6,7 @@ type SectionProps = {
 
 const Section = ({ children }: SectionProps) => {
   return (
-    <div className="Section md:container mx-auto flex w-full my-6 px-6 md:my-8 md:px-8">
+    <div className="Section md:container mx-auto flex flex-col w-full my-6 px-6 md:my-8 md:px-8 space-y-2">
       {children}
     </div>
   )
