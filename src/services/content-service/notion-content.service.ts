@@ -11,9 +11,9 @@ export class NotionContentService implements ContentService {
     this.client = new NotionClient({ auth: serverEnv.notionAccessToken })
   }
 
-  public async getBio(): Promise<ContentBlock[]> {
+  public async getIntroBlocks(): Promise<ContentBlock[]> {
     const result = await this.client.blocks.children.list({
-      block_id: serverEnv.notionContentIds.bioPage,
+      block_id: serverEnv.notionContentIds.introPage,
     })
     return mapNotionBlockToContentBlock(result.results)
   }

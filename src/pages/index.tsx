@@ -9,7 +9,7 @@ import ContactSection from '../components/sections/contact-section'
 import { contentService } from '../services/content-service/content.service'
 
 const HomePage = ({
-  bioBlocks,
+  introBlocks,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <MainLayout>
@@ -22,7 +22,7 @@ const HomePage = ({
       </Head>
       <Section>
         <SectionHeader>Intro</SectionHeader>
-        <ContentRenderer blocks={bioBlocks} />
+        <ContentRenderer blocks={introBlocks} />
       </Section>
       <Section>
         <SectionHeader>Últimas entradas</SectionHeader>
@@ -36,11 +36,12 @@ const HomePage = ({
 }
 
 export const getStaticProps = async () => {
-  const bio = await contentService.getBio()
+  const introBlocks = await contentService.getIntroBlocks()
   return {
     props: {
-      bioBlocks: bio,
+      introBlocks,
     },
+    revalidate: 10
   }
 }
 
