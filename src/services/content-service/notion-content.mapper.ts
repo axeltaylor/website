@@ -2,6 +2,7 @@ import {
   BulletedListContentBlock,
   ContentBlock,
   ContentBlockType,
+  ImageContentBlock,
   ListContentBlock,
   NumberedListContentBlock,
   RichTextContent,
@@ -21,6 +22,8 @@ export function mapNotionBlockToContentBlock(
       case 'heading_2':
       case 'heading_3':
         return [...contents, mapTextBasedBlock(notionBlock)]
+      case 'image':
+        return [...contents, mapImageContentBlock(notionBlock)]
       case 'bulleted_list_item':
       case 'numbered_list_item':
         const listBlock =
@@ -37,6 +40,7 @@ export function mapNotionBlockToContentBlock(
           ]
           return contents
         }
+
       default:
         console.warn(`Uknown block: ${notionBlock.type}`, notionBlock)
         return contents
@@ -84,5 +88,13 @@ function mapRichText(richText: any): RichTextContent {
     isItalic: richText.annotations?.italic || false,
     isStrikethrough: richText.annotations?.strikethrough || false,
     isUnderline: richText.annotations?.underline || false,
+  }
+}
+
+function mapImageContentBlock(block: any): ImageContentBlock {
+  return {
+    type: ContentBlockType.Image,
+    url: block.image?.file?.url || block.image?.external?.url || '',
+    alt: block.image?.caption?.[0]?.plain_text || '',
   }
 }

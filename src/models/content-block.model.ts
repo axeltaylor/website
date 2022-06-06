@@ -7,6 +7,7 @@ export enum ContentBlockType {
   Heading1 = 'heading_1',
   Heading2 = 'heading_2',
   Heading3 = 'heading_3',
+  Image = 'image',
 }
 
 export interface ContentBlock {
@@ -53,4 +54,10 @@ export interface RichTextContent {
   isStrikethrough: boolean
   isUnderline: boolean
   isCode: boolean
+}
+
+export interface ImageContentBlock extends ContentBlock {
+  type: ContentBlockType.Image
+  url: string
+  alt: string
 }

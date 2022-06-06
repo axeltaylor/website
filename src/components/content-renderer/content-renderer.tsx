@@ -3,11 +3,13 @@ import {
   ContentBlock,
   ContentBlockType,
   HeadingContentBlock,
+  ImageContentBlock,
   NumberedListContentBlock,
   ParagraphContentBlock,
 } from '../../models/content-block.model'
 import ContentBulletedList from './content-bulleted-list'
 import ContentHeading from './content-heading'
+import ContentImage from './content-image'
 import ContentNumberedList from './content-numbered-list'
 import ContentParagraph from './content-paragraph'
 
@@ -39,6 +41,8 @@ const renderByTypeOfBlock = (block: ContentBlock, key: number) => {
     case ContentBlockType.Heading2:
     case ContentBlockType.Heading3:
       return <ContentHeading block={block as HeadingContentBlock} key={key} />
+    case ContentBlockType.Image:
+      return <ContentImage block={block as ImageContentBlock} key={key} />
     default:
       console.warn(block.type, block)
       return null
