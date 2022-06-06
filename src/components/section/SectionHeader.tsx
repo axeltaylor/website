@@ -3,11 +3,13 @@ import { ReactNode } from 'react'
 
 type SectionHeaderProps = {
   children: ReactNode
+  className?: string
 }
 
-const SectionHeader = ({ children }: SectionHeaderProps) => {
+const SectionHeader = ({ children, className }: SectionHeaderProps) => {
   return (
-    <div className="flex flex-row items-center space-x-2 w-full">
+    <div
+      className={`flex flex-row items-center space-x-2 w-full ${className}`.trim()}>
       <Terminal
         size={18}
         strokeWidth="3"
