@@ -26,6 +26,9 @@ module.exports = {
         'almost-black': '#0B1418',
         twitter: '#1DA1F2',
       },
+      fontFamily: {
+        'custom': 'Inconsolata, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'
+      }
     },
   },
   plugins: [],

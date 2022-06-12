@@ -8,6 +8,7 @@ export enum ContentBlockType {
   Heading2 = 'heading_2',
   Heading3 = 'heading_3',
   Image = 'image',
+  Code = 'code',
 }
 
 export interface ContentBlock {
@@ -60,4 +61,10 @@ export interface ImageContentBlock extends ContentBlock {
   type: ContentBlockType.Image
   url: string
   alt: string
+}
+
+export interface CodeContentBlock extends ContentBlock {
+  type: ContentBlockType.Code
+  language: string
+  code: string
 }
