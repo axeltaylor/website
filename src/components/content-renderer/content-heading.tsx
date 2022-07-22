@@ -1,7 +1,7 @@
 import {
   ContentBlockType,
   HeadingContentBlock,
-} from '../../models/content-block.model'
+} from '../../models/content-block'
 import SectionHeader from '../section/SectionHeader'
 import SectionSubHeader from '../section/SectionSubHeader'
 import ContentRichText from './content-rich-text'

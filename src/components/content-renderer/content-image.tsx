@@ -1,7 +1,7 @@
 import NextImage from 'next/image'
 import { useEffect, useState } from 'react'
 
-import { ImageContentBlock } from '../../models/content-block.model'
+import { ImageContentBlock } from '../../models/content-block'
 
 type ContentImageProps = {
   block: ImageContentBlock

@@ -7,7 +7,7 @@ import {
   ImageContentBlock,
   NumberedListContentBlock,
   ParagraphContentBlock,
-} from '../../models/content-block.model'
+} from '../../models/content-block'
 import ContentBulletedList from './content-bulleted-list'
 import { ContentCode } from './content-code'
 import ContentHeading from './content-heading'

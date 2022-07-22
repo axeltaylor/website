@@ -4,7 +4,7 @@ import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import swift from 'react-syntax-highlighter/dist/cjs/languages/prism/swift'
 import typescript from 'react-syntax-highlighter/dist/cjs/languages/prism/typescript'
 
-import { CodeContentBlock } from '../../models/content-block.model'
+import { CodeContentBlock } from '../../models/content-block'
 import dracula from '../../third-party/react-syntax-highlighter/dracula'
 
 SyntaxHighlighter.registerLanguage('typescript', typescript)

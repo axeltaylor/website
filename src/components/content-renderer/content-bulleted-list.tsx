@@ -1,4 +1,4 @@
-import { BulletedListContentBlock } from '../../models/content-block.model'
+import { BulletedListContentBlock } from '../../models/content-block'
 import ContentRichText from './content-rich-text'
 
 type ContentBulletedListProps = {

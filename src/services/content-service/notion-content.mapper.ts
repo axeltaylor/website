@@ -8,7 +8,7 @@ import {
   NumberedListContentBlock,
   RichTextContent,
   TextContentBlock,
-} from '../../models/content-block.model'
+} from '../../models/content-block'
 
 // all notion types are any | any[] until notion publishes their api types.
 export function mapNotionBlockToContentBlock(

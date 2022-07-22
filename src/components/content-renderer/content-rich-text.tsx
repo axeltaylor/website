@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 
-import { RichTextContent } from '../../models/content-block.model'
+import { RichTextContent } from '../../models/content-block'
 
 type ContentRichTextProps = {
   richTexts: RichTextContent[]

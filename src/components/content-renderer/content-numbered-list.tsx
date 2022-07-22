@@ -1,4 +1,4 @@
-import { NumberedListContentBlock } from '../../models/content-block.model'
+import { NumberedListContentBlock } from '../../models/content-block'
 import ContentRichText from './content-rich-text'
 
 type ContentNumberedListProps = {

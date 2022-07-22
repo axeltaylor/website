@@ -1,4 +1,4 @@
-import { ParagraphContentBlock } from '../../models/content-block.model'
+import { ParagraphContentBlock } from '../../models/content-block'
 import ContentRichText from './content-rich-text'
 
 type ContentParagraphProps = {
